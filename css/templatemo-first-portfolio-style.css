@@ -1,18 +1,7 @@
-/*
-
-TemplateMo 578 First Portfolio
-
-https://templatemo.com/tm-578-first-portfolio
-
-*/
-
-/*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
------------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #535da1;
-  --secondary-color: #14b789;
+  --primary-color: #34b890;
+  --secondary-color: #449DD1;
   --section-bg-color: #f9f9f9;
   --dark-color: #2e2e2e;
   --p-color: #717275;
@@ -48,6 +37,23 @@ body {
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: var(--dark-color);
+  font-family: var(--body-font-family);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 2.0s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
 h2,
 h3,
@@ -148,6 +154,21 @@ strong {
   padding: 10px 30px;
 }
 
+#greetings::after {
+  content: '|';
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /*---------------------------------------
   AVATAR IMAGE               
 -----------------------------------------*/
@@ -159,8 +180,8 @@ strong {
 }
 
 .avatar-image-large {
-  width: 90.4px;
-  height: 90.4px;
+  width: 230px;
+  height: 230px;
 }
 
 /*---------------------------------------
@@ -210,29 +231,27 @@ strong {
 }
 
 .custom-btn {
-  background: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  background: var(--primary-color);
+  border-radius: var(--border-radius-small);
+  color: var(--dark-color);
   font-weight: var(--font-weight-bold);
   padding: 12px 24px;
 }
 
 .custom-btn:hover {
-  background: var(--primary-color);
+  background: #72daba;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  color: var(--white-color);
+  color: var(--dark-color);
 }
 
 .custom-border-btn {
-  background: transparent;
-  border: 2px solid var(--secondary-color);
-  color: var(--secondary-color);
+  background: var(--primary-color);
+  color: var(--white-color);
   width: 100%;
 }
 
 .custom-border-btn:hover {
-  background: var(--secondary-color);
-  border-color: var(--secondary-color);
+  background: #72daba;
   color: var(--white-color);
   width: 100%;
 }
@@ -242,7 +261,7 @@ strong {
 }
 
 .custom-link:hover {
-  background-color: var(--secondary-color);
+  background-color: #72daba;
 }
 
 /*---------------------------------------
@@ -336,12 +355,12 @@ strong {
 
 .navbar-nav .nav-link.active::after,
 .navbar-nav .nav-link:hover::after {
-  background: var(--secondary-color);
+  background: var(--dark-color);
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color: var(--dark-color);
 }
 
 .navbar-toggler {
