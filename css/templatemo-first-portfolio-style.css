@@ -1,14 +1,14 @@
 :root {
   --white-color: #ffffff;
-  --primary-color: #34b890;
-  --secondary-color: #449DD1;
+  --primary-color: #00b350;
+  --secondary-color: linear-gradient(to left,#00c6ff, #0072ff);
   --section-bg-color: #f9f9f9;
   --dark-color: #2e2e2e;
   --p-color: #717275;
   --border-color: #e9eaeb;
   --featured-border-color: #727aab;
 
-  --body-font-family: 'DM Sans', sans-serif;
+  --body-font-family: 'Plus Jakarta Sans', sans-serif;
 
   --h1-font-size: 62px;
   --h2-font-size: 48px;
@@ -239,7 +239,7 @@ strong {
 }
 
 .custom-btn:hover {
-  background: #72daba;
+  background: #068a41;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--dark-color);
 }
@@ -251,7 +251,7 @@ strong {
 }
 
 .custom-border-btn:hover {
-  background: #72daba;
+  background: #068a41;
   color: var(--white-color);
   width: 100%;
 }
@@ -261,7 +261,7 @@ strong {
 }
 
 .custom-link:hover {
-  background-color: #72daba;
+  background-color: #068a41;
 }
 
 /*---------------------------------------
