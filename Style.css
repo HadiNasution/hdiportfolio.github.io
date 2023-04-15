@@ -141,8 +141,20 @@ span {
   border-radius: var(--radius40) !important;
 }
 
-.card:hover {
-  box-shadow: 0px 0px 10px 3px #0083ab83;
+#card-qwords:hover {
+  box-shadow: 0px 0px 10px 3px #ff660083;
+}
+
+#card-survey:hover {
+  box-shadow: 0px 0px 10px 3px #0077ff83;
+}
+
+#card-yarsi:hover {
+  box-shadow: 0px 0px 10px 3px #00ff5583;
+}
+
+#card-situ:hover {
+  box-shadow: 0px 0px 10px 3px #fffb0083;
 }
 
 .tertiary {
