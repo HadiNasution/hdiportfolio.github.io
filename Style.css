@@ -107,13 +107,13 @@ span {
 }
 
 .navbar-brand {
-  font-family: "PT Serif", serif !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
 }
 
 .nav-link {
-  font-family: "PT Serif", serif !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   font-size: 18px !important;
   font-weight: 400 !important;
 }
@@ -367,5 +367,5 @@ span {
 }
 
 .sosmed:hover {
-  border-bottom: 1px solid var(--black10);
+  border-bottom: 0.5px solid var(--black10);
 }
