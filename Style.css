@@ -2,8 +2,8 @@
   /* Colors */
   --primary: #fcfcfc;
   --secondary: #ffffff;
-  --accent: #08203e;
-  --accentDark: #143761;
+  --accent: #1e72e6;
+  --accentDark: #cae0ff;
   --black10: #5f5f5f;
   --black20: #2d2d2d;
   --black30: #161616;
@@ -33,7 +33,7 @@
 .display-3,
 .display-4,
 .display-5 {
-  font-family: "PT Serif", serif !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   color: var(--black30) !important;
   font-weight: 400 !important;
 }
@@ -86,7 +86,6 @@ span {
   .profile {
     width: 25%;
     height: 25%;
-    filter: drop-shadow(0px 0px 100px #557c93);
   }
 
   #status {
@@ -100,10 +99,6 @@ span {
   #jenis {
     text-align: start;
   }
-}
-
-.profile {
-  filter: drop-shadow(0px 0px 100px #557c93);
 }
 
 .navbar-brand {
@@ -138,20 +133,20 @@ span {
 }
 
 .btn-primary {
-  background-color: var(--accent) !important;
-  color: var(--secondary) !important;
+  background-color: var(--accentDark) !important;
+  color: var(--accent) !important;
   font-size: 24px !important;
   font-weight: 700 !important;
   padding: 12px 70px !important;
   border-radius: var(--radius20) !important;
-  border-style: 1px solid var(--accent) !important;
+  border-style: 1px solid var(--accentDark) !important;
 }
 
 .btn-primary:hover {
-  background-color: var(--accentDark) !important;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
 }
 
-.btn-outline-primary {
+.btn-outline-secondary {
   background-color: var(--secondary) !important;
   color: var(--accent) !important;
   border: 3px solid var(--accent) !important;
@@ -161,8 +156,22 @@ span {
   font-size: 24px !important;
 }
 
+.btn-outline-secondary:hover {
+  background-color: var(--accentDark) !important;
+}
+
+.btn-outline-primary {
+  background-color: var(--secondary) !important;
+  color: var(--accent) !important;
+  border: 3px solid var(--secondary) !important;
+  border-radius: var(--radius20) !important;
+  padding: 9px 20px !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+}
+
 .btn-outline-primary:hover {
-  background-color: #557c9342 !important;
+  background-color: var(--accentDark) !important;
 }
 
 #experience {
@@ -178,10 +187,11 @@ span {
   background-color: var(--secondary) !important;
   border: 1.5px solid var(--grey) !important;
   border-radius: var(--radius40) !important;
+  padding-bottom: 0px !important;
 }
 
 .card:hover {
-  box-shadow: 0px 0px 20px 2px #143761;
+  box-shadow: 0px 0px 20px 2px var(--accentDark);
 }
 
 .tertiary {
@@ -367,5 +377,6 @@ span {
 }
 
 .sosmed:hover {
-  border-bottom: 0.5px solid var(--black10);
+  background: var(--accentDark) !important;
+  border-radius: var(--radius20);
 }
