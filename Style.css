@@ -9,6 +9,7 @@
   --black30: #161616;
   --bg2: #eaeaea;
   --grey: #dfdfdf;
+  --grey10: #b8b8b8;
 
   /* Border */
   --radius20: 20px;
@@ -122,14 +123,14 @@ span {
 }
 
 .greetings {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 .intro {
-  font-size: 20px;
+  font-size: 32px;
   color: var(--black20);
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .btn-primary {
@@ -376,7 +377,27 @@ span {
   background: var(--accent) !important;
 }
 
+.sosmed {
+  margin-bottom: 10px !important;
+}
+
 .sosmed:hover {
-  background: var(--accentDark) !important;
+  background: linear-gradient(90deg, #cae0ff 0%, rgba(255, 255, 255, 0) 76.56%) !important;
   border-radius: var(--radius20);
+  padding: 10px 8px;
+  transition: 100ms linear;
+}
+
+.prototype-video {
+  border-radius: var(--radius20);
+}
+
+.gambar-sample {
+  border-radius: var(--radius20);
+  border: solid 1px var(--grey);
+}
+
+.role {
+  color: var(--grey10);
+  font-weight: 400;
 }
