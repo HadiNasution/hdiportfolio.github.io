@@ -1,6 +1,6 @@
 <!-- 
     Ichbal Hadi Nasution
-    April 7, 2023
+    May 21, 2023
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -34,6 +34,10 @@
         </li>
         <p class="my-auto mx-auto">•</p>
         <li class="nav-item text-center">
+          <a class="nav-link m-2 fs-5" aria-current="page" href="index.html#certificate">Certificate</a>
+        </li>
+        <p class="my-auto mx-auto">•</p>
+        <li class="nav-item text-center">
           <a class="nav-link m-2 fs-5" aria-current="page" href="index.html#contact">Contact</a>
         </li>
       </ul>
@@ -55,6 +59,9 @@
        </div>
      </section> -->
 
+    <!-- to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Assets/arrow-up.svg" /></button>
+
     <!-- Header -->
     <section>
       <div class="container text-center mt-5 mb-5">
@@ -70,7 +77,7 @@
                 <p class="details"><img src="Assets/briefcase.png" class="mb-1" /> Fulltime</p>
               </div>
               <div class="col-md-3" id="waktu">
-                <p class="details"><img src="Assets/calendar.png" class="mb-1" /> Des 2022 - May 2023</p>
+                <p class="details"><img src="Assets/calendar.png" class="mb-1" /> Des 2022 - Now</p>
               </div>
               <div class="col-md-3" id="jenis">
                 <p class="details"><img src="Assets/web.svg" class="mb-1" /> Website</p>
@@ -127,7 +134,7 @@
                     companies also require different access rights to documents related to audits. <br /><br />
                     <img src="Assets/comsys/brief project.png" alt="brief project" class="gambar-sample w-50 h-25" /> <br /><br />
                     <span>💼 My Role In the Project, Who Else in the project and My responsibility.</span>
-                    <br />My role in this project is as a solo UI/UX Designer. I work intently with the developer team, developer manager, and project owner. My responsibilities cover the entire design process, from research to testing.
+                    <br />My role in this project is as a UI/UX Designer. I work intently with the developer team, developer manager, and project owner. My responsibilities cover the entire design process, from research to testing.
                     <br /><br />
                     <span>🎯 Goals.</span>
                     <br />• Create document, workflow, and report management applications like competitors (tugboatlogic) <br />
@@ -299,6 +306,28 @@
       span.onclick = function () {
         modal.style.display = "none";
       };
+
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
