@@ -382,7 +382,7 @@ span {
 }
 
 .sosmed:hover {
-  background: linear-gradient(90deg, #cae0ff 0%, rgba(255, 255, 255, 0) 76.56%) !important;
+  background: linear-gradient(90deg, #cae0ff 0%, rgba(255, 255, 255, 0) 90%) !important;
   border-radius: var(--radius20);
   padding: 10px 8px;
   transition: 100ms linear;
