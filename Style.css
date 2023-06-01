@@ -4,6 +4,7 @@
   --secondary: #ffffff;
   --accent: #1e72e6;
   --accentDark: #cae0ff;
+  --accentDarker: #a3c8fc;
   --black10: #5f5f5f;
   --black20: #2d2d2d;
   --black30: #161616;
@@ -144,7 +145,7 @@ span {
 }
 
 .btn-primary:hover {
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  background-color: var(--accentDarker) !important;
 }
 
 .btn-outline-secondary {
@@ -382,10 +383,10 @@ span {
 }
 
 .sosmed:hover {
-  background: linear-gradient(90deg, #cae0ff 0%, rgba(255, 255, 255, 0) 90%) !important;
+  background: #cae0ff !important;
   border-radius: var(--radius20);
   padding: 10px 8px;
-  transition: 100ms linear;
+  transition: 200ms linear;
 }
 
 .prototype-video {
@@ -412,4 +413,13 @@ span {
   outline: none; /* Remove outline */
   background: none;
   cursor: pointer;
+}
+
+.myImages {
+  border-radius: 10px;
+  border: 2px solid var(--black10);
+}
+
+.step {
+  border-left: 2px solid var(--grey10);
 }
