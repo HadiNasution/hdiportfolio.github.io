@@ -35,7 +35,7 @@
 .display-3,
 .display-4,
 .display-5 {
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   color: var(--black30) !important;
   font-weight: 400 !important;
 }
@@ -46,13 +46,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   color: var(--black30) !important;
   font-weight: 700 !important;
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   background-color: var(--primary) !important;
   color: var(--black20) !important;
 }
@@ -104,13 +104,13 @@ span {
 }
 
 .navbar-brand {
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
 }
 
 .nav-link {
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   font-size: 18px !important;
   font-weight: 400 !important;
 }
@@ -379,14 +379,16 @@ span {
 }
 
 .sosmed {
-  margin-bottom: 10px !important;
+  background-color: var(--secondary);
+  border: 0.5px solid var(--grey);
+  border-radius: var(--radius20);
+  padding: 20px 45px;
 }
 
 .sosmed:hover {
-  background: #cae0ff !important;
+  background-color: var(--accentDark);
+  border: 0.5px solid var(--accentDarker);
   border-radius: var(--radius20);
-  padding: 10px 8px;
-  transition: 200ms linear;
 }
 
 .prototype-video {
