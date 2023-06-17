@@ -1,18 +1,23 @@
 :root {
   /* Colors */
-  --primary: #fcfcfc;
+  --primary: #ffffff;
   --secondary: #ffffff;
   --accent: #1e72e6;
   --accentDark: #cae0ff;
   --accentDarker: #a3c8fc;
   --black10: #5f5f5f;
   --black20: #2d2d2d;
-  --black30: #161616;
+  --black30: #050505;
   --bg2: #eaeaea;
   --grey: #dfdfdf;
   --grey10: #b8b8b8;
+  --grey20: #f6f5f4;
 
   /* Border */
+  --radius10: 10px;
+  --radius12: 12px;
+  --radius16: 16px;
+  --radius26: 26px;
   --radius20: 20px;
   --radius40: 40px;
   --radius100: 100px;
@@ -35,9 +40,9 @@
 .display-3,
 .display-4,
 .display-5 {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   color: var(--black30) !important;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 
 h1,
@@ -46,13 +51,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   color: var(--black30) !important;
   font-weight: 700 !important;
 }
 
 body {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   background-color: var(--primary) !important;
   color: var(--black20) !important;
 }
@@ -103,13 +108,6 @@ span {
   }
 }
 
-.sosmed {
-  background-color: var(--secondary);
-  border: 0.5px solid var(--grey);
-  border-radius: var(--radius20);
-  padding: 20px 45px !important;
-}
-
 .sosmed:hover {
   background-color: var(--accentDark);
   border: 0.5px solid var(--accentDarker);
@@ -117,13 +115,13 @@ span {
 }
 
 .navbar-brand {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
 }
 
 .nav-link {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   font-size: 18px !important;
   font-weight: 400 !important;
 }
@@ -153,7 +151,7 @@ span {
   font-size: 24px !important;
   font-weight: 700 !important;
   padding: 12px 70px !important;
-  border-radius: var(--radius20) !important;
+  border-radius: var(--radius16) !important;
   border-style: 1px solid var(--accentDark) !important;
 }
 
@@ -176,13 +174,13 @@ span {
 }
 
 .btn-outline-primary {
-  background-color: var(--secondary) !important;
+  background-color: var(--grey20) !important;
   color: var(--accent) !important;
-  border: 3px solid var(--secondary) !important;
-  border-radius: var(--radius20) !important;
+  border: none !important;
+  border-radius: var(--radius10) !important;
   padding: 9px 20px !important;
   font-weight: 700 !important;
-  font-size: 24px !important;
+  font-size: 18px !important;
 }
 
 .btn-outline-primary:hover {
@@ -199,14 +197,14 @@ span {
   padding-bottom: 100px;
 }
 .card {
-  background-color: var(--secondary) !important;
-  border: 1.5px solid var(--grey) !important;
-  border-radius: var(--radius40) !important;
-  padding-bottom: 0px !important;
+  background-color: var(--grey20) !important;
+  border-radius: var(--radius12) !important;
+  border: none !important;
+  padding: 14px !important;
 }
 
 .card:hover {
-  box-shadow: 0px 0px 20px 2px var(--accentDark);
+  background-color: #f1f1f1 !important;
 }
 
 .tertiary {
@@ -227,14 +225,19 @@ span {
   border-bottom: 0.5px solid var(--grey);
 }
 
+.card-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
 .card-text {
-  font-size: 26px !important;
-  font-weight: 500 !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
   color: var(--black20) !important;
 }
 
 .period {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--black10);
 }
@@ -256,6 +259,7 @@ span {
 }
 
 .details {
+  font-size: 14px;
   font-weight: 400 !important;
   color: var(--black10) !important;
 }
@@ -366,6 +370,21 @@ span {
   cursor: pointer;
 }
 
+.sosmed {
+  background-color: var(--secondary);
+  border: 0.5px solid var(--grey);
+  border-radius: var(--radius20);
+  padding: 20px 20px !important;
+}
+
+#col-sosmed-work {
+  text-align: right;
+}
+
+#col-sosmed-casual {
+  text-align: left;
+}
+
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
@@ -373,6 +392,11 @@ span {
   .sosmed {
     padding: 20px 20px !important;
   }
+  #col-sosmed-work,
+  #col-sosmed-casual {
+    text-align: center !important;
+  }
+
   .btn-primary {
     padding: 12px 14px !important;
     width: 100%;
@@ -409,11 +433,6 @@ span {
 .gambar-sample {
   border-radius: var(--radius20);
   border: solid 1px var(--grey);
-}
-
-.role {
-  color: var(--grey10);
-  font-weight: 400;
 }
 
 #myBtn {
