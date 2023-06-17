@@ -221,7 +221,7 @@ span {
 }
 
 .jobdesc {
-  padding: 10px;
+  padding-bottom: 12px;
   border-bottom: 0.5px solid var(--grey);
 }
 
