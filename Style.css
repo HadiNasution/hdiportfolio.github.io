@@ -401,9 +401,15 @@ span {
     padding: 12px 14px !important;
     width: 100%;
   }
-  .fire {
-    width: 24px;
-    height: 24px;
+
+  .profile {
+    width: 60%;
+    height: 60%;
+  }
+
+  .signature {
+    height: 60% !important;
+    width: auto;
   }
 }
 
