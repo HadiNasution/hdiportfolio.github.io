@@ -40,7 +40,7 @@
 .display-3,
 .display-4,
 .display-5 {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
   color: var(--black30) !important;
   font-weight: 600 !important;
 }
@@ -51,15 +51,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
   color: var(--black30) !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
 body {
   font-family: "Inter", sans-serif !important;
-  background-color: var(--primary) !important;
   color: var(--black20) !important;
+  font-weight: 400 !important;
 }
 
 a {
@@ -115,15 +115,15 @@ span {
 }
 
 .navbar-brand {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
   font-size: 24px !important;
   font-weight: 700 !important;
 }
 
 .nav-link {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
   font-size: 18px !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 .nav-link:hover {
