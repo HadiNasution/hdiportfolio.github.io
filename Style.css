@@ -130,8 +130,10 @@ span {
   color: var(--accent) !important;
 }
 
-.navbar {
-  background: linear-gradient(180deg, #fcfcfc 48.75%, rgba(252, 252, 252, 0) 100%) !important;
+.navbar-nav {
+  background-color: #ebf4ff42;
+  border-radius: var(--radius20);
+  backdrop-filter: blur(10px);
 }
 
 .greetings {
